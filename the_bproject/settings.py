@@ -25,7 +25,7 @@ SECRET_KEY = '&l-03szbtt9ocf6c38+=*$0t(+f(g095(afv3e7sm1*2d9rev+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://app-blog-project.herokuapp.com/']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'whitenoise.middleware.CommonMiddleware', #For heroku purposes
+    'whitenoise.middleware.WhiteNoiseMiddleware', #For heroku purposes
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
